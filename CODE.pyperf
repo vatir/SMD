@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ProfilingTarget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectTarget>
+    <TargetProject>43d08aaf-657d-479d-ab75-541a300c905a</TargetProject>
+    <FriendlyName>CODE</FriendlyName>
+  </ProjectTarget>
+  <Reports />
+</ProfilingTarget>

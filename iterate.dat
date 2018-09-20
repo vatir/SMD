@@ -1,0 +1,71 @@
+RUNNING THE L-BFGS-B CODE
+
+it    = iteration number
+nf    = number of function evaluations
+nseg  = number of segments explored during the Cauchy search
+nact  = number of active bounds at the generalized Cauchy point
+sub   = manner in which the subspace minimization terminated:
+        con = converged, bnd = a bound was reached
+itls  = number of iterations performed in the line search
+stepl = step length used
+tstep = norm of the displacement (total step)
+projg = norm of the projected gradient
+f     = function value
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           11     M =           10
+
+   it   nf  nseg  nact  sub  itls  stepl    tstep     projg        f
+    0    1     -     -   -     -     -        -     8.000D-01  1.000D+00
+    1    2     2     7  ---    0  1.0D+00  9.3D-01  3.553D-01  4.818D-01
+    2    3     1     7  con    0  1.0D+00  1.6D-01  3.841D-01  4.422D-01
+    3    4     1     6  bnd    0  1.0D+00  5.6D-01  4.696D-01  3.066D-01
+    4    5     1     7  con    0  1.0D+00  2.0D-01  4.493D-01  2.418D-01
+    5    6     1     7  con    0  1.0D+00  1.6D-01  1.534D-01  1.927D-01
+    6    9     1     7  con    2  3.1D+00  4.7D-02  3.508D-01  1.563D-01
+    7   10     1     7  bnd    0  1.0D+00  3.3D-01  2.193D-01  1.229D-01
+    8   11     1     8  con    0  1.0D+00  5.2D-01  1.334D-01  5.609D-02
+    9   12     1     8  con    0  1.0D+00  5.7D-01  1.031D-01  2.771D-02
+   10   13     1     7  bnd    0  1.0D+00  2.5D-01  8.895D-02  2.236D-02
+   11   14     1     7  bnd    0  1.0D+00  2.7D-01  1.235D-01  2.016D-02
+   12   15     1     8  con    0  1.0D+00  5.0D-02  4.885D-02  1.794D-02
+   13   21     1     7  con    5  2.5D+00  2.6D-01  1.733D-01  1.221D-02
+   14   23     1     6  con    1  2.3D-02  8.1D-03  1.945D-01  1.214D-02
+   15   24     1     6  bnd    0  1.0D+00  1.1D-01  3.817D-01  7.200D-03
+   16   25     1     7  con    0  1.0D+00  7.2D-02  1.521D-01  3.912D-03
+   17   27     1     7  con    1  2.0D-01  2.0D-02  3.973D-02  3.433D-03
+   18   29     1     7  con    1  2.7D-01  1.4D-02  4.021D-03  3.365D-03
+   19   30     1     7  con    0  1.0D+00  1.5D-03  1.574D-03  3.365D-03
+   20   31     1     7  con    0  1.0D+00  6.3D-04  1.540D-03  3.365D-03
+   21   33     1     7  con    1  5.0D+00  2.0D-04  1.479D-03  3.365D-03
+   22   34     1     7  con    0  1.0D+00  4.0D-04  2.296D-03  3.364D-03
+   23   35     1     7  con    0  1.0D+00  2.6D-03  7.854D-03  3.362D-03
+   24   36     1     7  con    0  1.0D+00  5.9D-03  1.490D-02  3.357D-03
+   25   37     1     7  con    0  1.0D+00  1.8D-02  2.756D-02  3.342D-03
+   26   38     1     7  con    0  1.0D+00  4.4D-02  4.690D-02  3.307D-03
+   27   39     1     7  con    0  1.0D+00  9.4D-02  7.469D-02  3.239D-03
+   28   40     1     7  con    0  1.0D+00  1.2D-01  9.614D-02  3.136D-03
+   29   41     1     7  con    0  1.0D+00  1.6D-01  1.066D-01  2.922D-03
+   30   42     1     7  con    0  1.0D+00  2.1D-01  7.138D-02  2.701D-03
+   31   43     1     7  con    0  1.0D+00  4.4D-02  2.430D-02  2.398D-03
+   32   45     1     7  con    1  3.8D-01  8.1D-02  4.755D-02  2.334D-03
+   33   46     1     7  con    0  1.0D+00  8.3D-02  7.199D-02  2.255D-03
+   34   47     1     6  con    0  1.0D+00  6.7D-02  2.762D-02  2.225D-03
+   35   48     1     6  con    0  1.0D+00  8.0D-03  4.596D-02  2.194D-03
+   36   57     1     6  bnd    8  3.1D-01  2.3D-02  4.736D-02  2.130D-03
+   37   71     1     6  bnd   13  3.9D-03  3.3D-04  5.138D-02  2.128D-03
+   38   89     1     6  bnd   17  4.6D-04  4.0D-05  5.191D-02  2.128D-03
+   39  100     1     6  bnd   10  4.2D-06  3.7D-07  2.010D-03  2.128D-03
+   40  140     2     7  bnd   19  7.5D-12  1.0D-14      -          -
+
+ABNORMAL_TERMINATION_IN_LNSRCH                              
+
+ Line search cannot locate an adequate point after 20 function
+  and gradient evaluations.  Previous x, f and g restored.
+ Possible causes: 1 error in function or gradient evaluation;
+                  2 rounding error dominate computation.
+
+ Total User time 0.000E+00 seconds.
+

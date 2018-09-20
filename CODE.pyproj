@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{43d08aaf-657d-479d-ab75-541a300c905a}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>TTSPCfromBH\TTPhotonDataImport.py</StartupFile>
+    <SearchPath>..\CODE</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments />
+    <InterpreterPath />
+    <InterpreterArguments />
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Compile Include="bokeh_testing.py" />
+    <Compile Include="BulkImport.py" />
+    <Compile Include="extract_r.py" />
+    <Compile Include="Filewalk.py" />
+    <Compile Include="HDF5Generator.py" />
+    <Compile Include="HeatMapPlot - V2.py" />
+    <Compile Include="HeatMapPlot.py" />
+    <Compile Include="IRF_Fitting.py" />
+    <Compile Include="ModelTesting.py" />
+    <Compile Include="ipython_setup.py" />
+    <Compile Include="SearchHDF5.py" />
+    <Compile Include="SetupModulePaths.py" />
+    <Compile Include="StandardBufferSetup.py" />
+    <Compile Include="Standards.py" />
+    <Compile Include="TempModelTesting.py" />
+    <Compile Include="FILDA_mp_testing.py" />
+    <Compile Include="Testing.py" />
+    <Compile Include="Common\CLIArgParse.py" />
+    <Compile Include="Common\Helpers.py" />
+    <Compile Include="Common\__init__.py" />
+    <Compile Include="DataContainer\HDF5FileTools.py" />
+    <Compile Include="DataContainer\StorageArray.py" />
+    <Compile Include="DataContainer\__init__.py" />
+    <Compile Include="Display\Display.py" />
+    <Compile Include="Display\__init__.py" />
+    <Compile Include="Fitting\Convolve.py" />
+    <Compile Include="Fitting\Exp.py" />
+    <Compile Include="Fitting\Fit.py" />
+    <Compile Include="Fitting\__init__.py" />
+    <Compile Include="Old\OpenOPT_ModelTesting.py" />
+    <Compile Include="Old\pyOpt_ALPSO_ModelTesting.py" />
+    <Compile Include="Old\pyOpt_ModelTesting.py" />
+    <Compile Include="TempScripts\ConvolveTesting.py" />
+    <Compile Include="TempScripts\FILDA_Testing.py" />
+    <Compile Include="TempScripts\RandomTest.py" />
+    <Compile Include="TempScripts\SpyderScripts.py" />
+    <Compile Include="TempScripts\SpyderScripts2.py" />
+    <Compile Include="TempScripts\__init__.py" />
+    <Compile Include="Test\Test.py" />
+    <Compile Include="Test\__init__.py" />
+    <Compile Include="TTSPCfromBH\BaseData.py" />
+    <Compile Include="TTSPCfromBH\DataCalc.py" />
+    <Compile Include="TTSPCfromBH\NormCalc.py" />
+    <Compile Include="TTSPCfromBH\TTPhotonDataImport.py" />
+    <Compile Include="TTSPCfromBH\__init__.py" />
+    <Content Include="Display\result_images\test_axes\arc_ellipse-expected.png" />
+    <Content Include="Display\result_images\test_axes\arc_ellipse-expected_pdf.png" />
+    <Content Include="Display\result_images\test_axes\arc_ellipse.png" />
+    <Content Include="Display\result_images\test_axes\arc_ellipse_pdf.png" />
+    <Content Include="Display\result_images\test_axes\autoscale_tiny_range-expected.png" />
+    <Content Include="Display\result_images\test_axes\autoscale_tiny_range-expected_pdf.png" />
+    <Content Include="Display\result_images\test_axes\autoscale_tiny_range.png" />
+    <Content Include="Display\result_images\test_axes\autoscale_tiny_range_pdf.png" />
+    <Content Include="Display\result_images\test_axes\axhspan_epoch-expected.png" />
+    <Content Include="Display\result_images\test_axes\axhspan_epoch-expected_pdf.png" />
+    <Content Include="Display\result_images\test_axes\axhspan_epoch.png" />
+    <Content Include="Display\result_images\test_axes\axhspan_epoch_pdf.png" />
+    <Content Include="Display\result_images\test_axes\axvspan_epoch-expected.png" />
+    <Content Include="Display\result_images\test_axes\axvspan_epoch-expected_pdf.png" />
+    <Content Include="Display\result_images\test_axes\axvspan_epoch.png" />
+    <Content Include="Display\result_images\test_axes\axvspan_epoch_pdf.png" />
+    <Content Include="Display\result_images\test_axes\boxplot-expected.png" />
+    <Content Include="Display\result_images\test_axes\boxplot-expected_pdf.png" />
+    <Content Include="Display\result_images\test_axes\boxplot.png" />
+    <Content Include="Display\result_images\test_axes\boxplot_pdf.png" />
+    <Content Include="Display\result_images\test_axes\canonical-expected.png" />
+    <Content Include="Display\result_images\test_axes\canonical-expected_pdf.png" />
+    <Content Include="Display\result_images\test_axes\canonical.png" />
+    <Content Include="Display\result_images\test_axes\canonical_pdf.png" />
+    <Content Include="Display\result_images\test_axes\const_xy-expected.png" />
+    <Content Include="Display\result_images\test_axes\const_xy-expected_pdf.png" />
+    <Content Include="Display\result_images\test_axes\const_xy.png" />
+    <Content Include="Display\result_images\test_axes\const_xy_pdf.png" />
+    <Content Include="Display\result_images\test_axes\contour_colorbar-expected.png" />
+    <Content Include="Display\result_images\test_axes\contour_colorbar-expected_pdf.png" />
+    <Content Include="Display\result_images\test_axes\contour_colorbar.png" />
+    <Content Include="Display\result_images\test_axes\contour_colorbar_pdf.png" />
+    <Content Include="Display\result_images\test_axes\contour_hatching-expected.png" />
+    <Content Include="Display\result_images\test_axes\contour_hatching-expected_pdf.png" />
+    <Content Include="Display\result_images\test_axes\contour_hatching.png" />
+    <Content Include="Display\result_images\test_axes\contour_hatching_pdf.png" />
+    <Content Include="Display\result_images\test_axes\errorbar_basic-expected.png" />
+    <Content Include="Display\result_images\test_axes\errorbar_basic-expected_pdf.png" />
+    <Content Include="Display\result_images\test_axes\errorbar_basic.png" />
+    <Content Include="Display\result_images\test_axes\errorbar_basic_pdf.png" />
+    <Content Include="Display\result_images\test_axes\errorbar_mixed-expected.png" />
+    <Content Include="Display\result_images\test_axes\errorbar_mixed-expected_pdf.png" />
+    <Content Include="Display\result_images\test_axes\errorbar_mixed.png" />
+    <Content Include="Display\result_images\test_axes\errorbar_mixed_pdf.png" />
+    <Content Include="Display\result_images\test_axes\errorbar_zorder-expected.png" />
+    <Content Include="Display\result_images\test_axes\errorbar_zorder-expected_pdf.png" />
+    <Content Include="Display\result_images\test_axes\errorbar_zorder.png" />
+    <Content Include="Display\result_images\test_axes\errorbar_zorder_pdf.png" />
+    <Content Include="Display\result_images\test_axes\fill_between_interpolate-expected.png" />
+    <Content Include="Display\result_images\test_axes\offset_points-expected.png" />
+    <Content Include="Display\result_images\test_axes\offset_points-expected_pdf.png" />
+    <Content Include="Display\result_images\test_axes\offset_points.png" />
+    <Content Include="Display\result_images\test_axes\offset_points_pdf.png" />
+    <Content Include="Display\result_images\test_axes\vline_hline_zorder-expected.png" />
+    <Content Include="Display\result_images\test_axes\vline_hline_zorder-expected_pdf.png" />
+    <Content Include="Display\result_images\test_axes\vline_hline_zorder.png" />
+    <Content Include="Display\result_images\test_axes\vline_hline_zorder_pdf.png" />
+    <Content Include="Display\result_images\test_axes\arc_ellipse-expected.svg" />
+    <Content Include="Display\result_images\test_axes\arc_ellipse.svg" />
+    <Content Include="Display\result_images\test_axes\autoscale_tiny_range-expected.svg" />
+    <Content Include="Display\result_images\test_axes\autoscale_tiny_range.svg" />
+    <Content Include="Display\result_images\test_axes\axhspan_epoch-expected.svg" />
+    <Content Include="Display\result_images\test_axes\axhspan_epoch.svg" />
+    <Content Include="Display\result_images\test_axes\axvspan_epoch-expected.svg" />
+    <Content Include="Display\result_images\test_axes\axvspan_epoch.svg" />
+    <Content Include="Display\result_images\test_axes\boxplot-expected.svg" />
+    <Content Include="Display\result_images\test_axes\boxplot.svg" />
+    <Content Include="Display\result_images\test_axes\canonical-expected.svg" />
+    <Content Include="Display\result_images\test_axes\canonical.svg" />
+    <Content Include="Display\result_images\test_axes\const_xy-expected.svg" />
+    <Content Include="Display\result_images\test_axes\const_xy.svg" />
+    <Content Include="Display\result_images\test_axes\contour_colorbar-expected.svg" />
+    <Content Include="Display\result_images\test_axes\contour_colorbar.svg" />
+    <Content Include="Display\result_images\test_axes\contour_hatching-expected.svg" />
+    <Content Include="Display\result_images\test_axes\contour_hatching.svg" />
+    <Content Include="Display\result_images\test_axes\errorbar_basic-expected.svg" />
+    <Content Include="Display\result_images\test_axes\errorbar_basic.svg" />
+    <Content Include="Display\result_images\test_axes\errorbar_mixed-expected.svg" />
+    <Content Include="Display\result_images\test_axes\errorbar_mixed.svg" />
+    <Content Include="Display\result_images\test_axes\errorbar_zorder-expected.svg" />
+    <Content Include="Display\result_images\test_axes\errorbar_zorder.svg" />
+    <Content Include="Display\result_images\test_axes\offset_points-expected.svg" />
+    <Content Include="Display\result_images\test_axes\offset_points.svg" />
+    <Content Include="Display\result_images\test_axes\vline_hline_zorder-expected.svg" />
+    <Content Include="Display\result_images\test_axes\vline_hline_zorder.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common" />
+    <Folder Include="DataContainer" />
+    <Folder Include="Display" />
+    <Folder Include="Display\result_images\" />
+    <Folder Include="Display\result_images\test_axes" />
+    <Folder Include="Fitting" />
+    <Folder Include="Old" />
+    <Folder Include="TempScripts" />
+    <Folder Include="Test" />
+    <Folder Include="TTSPCfromBH" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
