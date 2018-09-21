@@ -6,11 +6,9 @@
     <ProjectGuid>{43d08aaf-657d-479d-ab75-541a300c905a}</ProjectGuid>
     <ProjectHome />
     <StartupFile>TTSPCfromBH\TTPhotonDataImport.py</StartupFile>
-    <SearchPath>..\CODE</SearchPath>
+    <SearchPath>.</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
-    <InterpreterVersion>2.7</InterpreterVersion>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <IsWindowsApplication>False</IsWindowsApplication>
@@ -19,11 +17,12 @@
     <InterpreterPath />
     <InterpreterArguments />
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <InterpreterId>CondaEnv|CondaEnv|SMD</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup />
   <ItemGroup>
-    <Compile Include="bokeh_testing.py" />
     <Compile Include="BulkImport.py" />
     <Compile Include="extract_r.py" />
     <Compile Include="Filewalk.py" />
@@ -32,7 +31,6 @@
     <Compile Include="HeatMapPlot.py" />
     <Compile Include="IRF_Fitting.py" />
     <Compile Include="ModelTesting.py" />
-    <Compile Include="ipython_setup.py" />
     <Compile Include="SearchHDF5.py" />
     <Compile Include="SetupModulePaths.py" />
     <Compile Include="StandardBufferSetup.py" />
@@ -167,7 +165,7 @@
     <Folder Include="TTSPCfromBH" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
+    <InterpreterReference Include="CondaEnv|CondaEnv|SMD" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>
